@@ -1,0 +1,266 @@
+header {
+    height: 632px;
+    background: url("../../img/Mask Group.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .log1,
+    .log2 {
+        display: none;
+    }
+    .text-section {
+        padding-top: 80px;
+        .title {
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0px 0px 28.5972px #000000;
+        }
+        .description {
+            .first {
+                font-weight: bold;
+                font-size: 42px;
+                line-height: 49px;
+                color: #ffffff;
+                text-shadow: 0px 0px 28.5972px #000000;
+                margin: 20px 0;
+            }
+            .second {
+                font-size: 24px;
+                line-height: 28px;
+                color: #ffffff;
+                text-shadow: 0px 0px 25px #000000;
+                margin: 40px 0;
+            }
+        }
+        .choose {
+            a {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 160px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.71);
+                color: black;
+                transition: 0.3s;
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 100%;
+                &:hover {
+                    background: #dda046;
+                    opacity: 0.7;
+                }
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+            .first,
+            .second {
+                display: grid;
+                // justify-content: space-between;
+                margin: 20px 0;
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            }
+        }
+    }
+    .zakaz {
+        margin-top: 80px;
+        background: rgba(255, 255, 255, 0.71);
+        box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+        height: 452px;
+        padding: 40px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+            color: #000000;
+        }
+        .des {
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #1e0801;
+            margin: 15px 0 30px 0;
+        }
+        .img {
+            position: relative;
+            img {
+                &:last-child {
+                    position: absolute;
+                    top: 0;
+                    right: -15px;
+                }
+            }
+        }
+        .zakazBtn {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 19px;
+            color: #000000;
+            background: linear-gradient(180deg, #ffdc83 0%, #fbd26a 25%, #c17024 84.9%, #e3a548 100%);
+            box-shadow: 0px 0px 48px rgba(240, 192, 92, 0.54);
+            padding: 12px 30px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: 1104px) {
+    header {
+        height: 888px;
+        .log1 {
+            display: block;
+        }
+        .Ltitle {
+            padding-top: 80px;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0px 0px 28.5972px #000000;
+        }
+        .Lfirst {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 49px;
+            color: #ffffff;
+            text-shadow: 0px 0px 28.5972px #000000;
+            margin-top: 20px;
+        }
+        .text-section {
+            width: 50%;
+            padding-top: 80px;
+            .title {
+                display: none;
+            }
+            .description {
+                .first {
+                    display: none;
+                }
+                .second {
+                    margin-top: 58px;
+                    margin-bottom: 60px;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .zakaz {
+            margin-left: 20px;
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 948px) {
+    header {
+        .text-section {
+            .description {
+                .second {
+                    margin: 40px 0 20px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 725px) {
+    header {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .flex {
+            display: block;
+        }
+        .log2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .second {
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #ffffff;
+                text-shadow: 4px 5px 28px #000000;
+            }
+            .zakazBtn {
+                background: linear-gradient(180deg, #ffdc83 0%, #fbd26a 25%, #c17024 84.9%, #e3a548 100%);
+                box-shadow: 0px 0px 48px rgba(240, 192, 92, 0.54);
+                padding: 10px 20px;
+                margin-top: 20px;
+            }
+        }
+        .zakaz {
+            display: none;
+        }
+        .Lfirst,
+        .Ltitle {
+            text-align: center;
+        }
+        .text-section {
+            width: 100%;
+            .description {
+                .second {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 649px) {
+    header {
+        .text-section {
+            .choose {
+                .first {
+                    margin: 10px 0 0 0;
+                }
+                a {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .Lfirst {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+}
+@media (max-width: 418px) {
+    header {
+        .log2 {
+            .second {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 386px) {
+    header {
+        .text-section {
+            .choose {
+                .first {
+                    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                }
+                a {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}

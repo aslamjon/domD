@@ -1,0 +1,29 @@
+.chooseHome {
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        color: #1e0801;
+        margin: 90px 0 40px 0;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width: 776px) {
+    .chooseHome {
+        .title {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 574px) {
+    .chooseHome {
+        .title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}

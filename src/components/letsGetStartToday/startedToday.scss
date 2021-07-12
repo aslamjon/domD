@@ -1,0 +1,159 @@
+.startedToday {
+    margin: 130px 0;
+    .log1 {
+        display: none;
+    }
+    .title {
+        text-align: center;
+        text-transform: uppercase;
+        color: #1e0801;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 100%;
+    }
+    .des {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #1e0801;
+        margin-top: 25px;
+        margin-bottom: 55px;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .box {
+        padding: 55px 65px;
+        background: #1d1a14;
+        position: relative;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 50%;
+            background: linear-gradient(to right, #1d1a14, rgba(29, 26, 20, 0.01)), url("../../img/Слой 2 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: absolute;
+            top: 0;
+            right: 0%;
+        }
+        .titleBox {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 139%;
+            color: #dda046;
+        }
+        .first {
+            .desBox {
+                font-size: 24px;
+                line-height: 139%;
+                color: #ffffff;
+                margin-top: 20px;
+                margin-bottom: 80px;
+            }
+        }
+        .second {
+            position: relative;
+            background: none;
+            z-index: 2;
+            max-height: 367px;
+            .homeImg {
+                max-width: 430px;
+                position: relative;
+                // min-height: 274px;
+                // max-height: 367px;
+            }
+            .play {
+                position: absolute;
+                top: 35%;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1163px) {
+    .startedToday {
+        .box {
+            .second {
+                .play {
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1121px) {
+    .startedToday {
+        .box {
+            &::after {
+                width: 45%;
+            }
+            .log2 {
+                display: none;
+            }
+            .first {
+                .desBox {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            .second {
+                .homeImg {
+                    width: 100%;
+                }
+            }
+        }
+        .log1 {
+            display: block;
+            width: 55%;
+        }
+    }
+}
+@media (max-width: 720px) {
+    .startedToday {
+        .log1 {
+            width: 100%;
+            text-align: center;
+        }
+        .flex {
+            display: block;
+        }
+        .box {
+            background: linear-gradient(to right, #1d1a14 45%, rgba(29, 26, 20, 0.5)) 100%,
+                url("../../img/Слой 2 1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            padding: 50px 30px;
+            &::after {
+                display: none;
+            }
+            .first {
+                .btn {
+                    display: none;
+                }
+                .desBox {
+                    text-align: center;
+                }
+            }
+            .second {
+                .homeImg {
+                    max-width: 100%;
+                }
+                .play {
+                    top: 35%;
+                }
+            }
+        }
+    }
+}

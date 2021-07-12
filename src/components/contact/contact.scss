@@ -1,0 +1,225 @@
+.contact {
+    background: url("../../img/Rectangle 81.png");
+
+    padding-top: 75px;
+    padding-bottom: 90px;
+    .title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        .first {
+            width: 49%;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+            padding: 40px;
+            .ques {
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 42px;
+                color: #000000;
+            }
+            .des {
+                font-size: 20px;
+                line-height: 150%;
+                color: #000000;
+                margin-top: 29px;
+                margin-bottom: 45px;
+            }
+            form {
+                textarea,
+                input {
+                    background: rgba(255, 255, 255, 0.33);
+                    box-shadow: inset 1px 1px 12px rgba(0, 0, 0, 0.19);
+                    border: none;
+                    padding: 10px;
+                    width: 100%;
+                    &::placeholder {
+                        padding: 10px;
+                    }
+                }
+                input {
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                }
+                button {
+                    cursor: pointer;
+                }
+            }
+        }
+        .second {
+            width: 49%;
+            background: rgba(255, 255, 255, 0.6);
+            box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+            padding: 40px;
+            .text {
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 42px;
+                color: #000000;
+            }
+            .addresse,
+            .mail,
+            .tel {
+                display: flex;
+            }
+            .addresse {
+                .map {
+                    background: url("../../img/map.svg");
+                }
+            }
+            .mail {
+                .mailImg {
+                    background: url("../../img/message.svg");
+                }
+                span {
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+            }
+            .tel {
+                display: flex;
+                .telImg {
+                    background: url("../../img/1.2.svg");
+                }
+            }
+            .addresse .map,
+            .mail .mailImg,
+            .tel .telImg {
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-size: 120px 120px;
+                background-position: center center;
+                display: inline-block;
+                margin-right: 15px;
+            }
+            .addresse {
+                margin-top: 29px;
+                margin-bottom: 25px;
+                div {
+                    &:last-child {
+                        font-size: 20px;
+                        line-height: 23px;
+                    }
+                }
+            }
+            .socioalBtn {
+                display: flex;
+                margin: 30px 0;
+                a {
+                    padding: 7px 20px;
+                    text-decoration: none;
+                    background: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000000;
+                    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    &:first-child {
+                        margin-right: 15px;
+                    }
+                    img {
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .tel {
+                margin-bottom: 30px;
+                div {
+                    &:last-child {
+                        font-weight: bold;
+                        font-size: 36px;
+                        line-height: 42px;
+                        color: #000000;
+                        span {
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #dda046;
+                            text-shadow: 0px 0px 3px rgba(211, 190, 136, 0.86);
+                        }
+                    }
+                }
+            }
+            .btn {
+                margin-top: 28px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contact {
+        .flex {
+            display: block;
+            .first,
+            .second {
+                width: 100%;
+            }
+            .second {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 568px) {
+    .contact {
+        .flex {
+            .first {
+                .ques {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .des {
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+            }
+            .second {
+                padding: 40px 20px;
+                .addresse {
+                    div {
+                        &:last-child {
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                }
+                .mail {
+                    span {
+                        font-size: 16px;
+                        line-height: 19px;
+                    }
+                }
+                .text {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+                .tel {
+                    div {
+                        &:last-child {
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+                .socioalBtn {
+                    a {
+                        &:first-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

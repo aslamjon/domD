@@ -1,0 +1,152 @@
+footer {
+    background: #1d1a14;
+    padding: 75px 0;
+    .log1 {
+        display: none;
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        .box {
+            .title {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: rgba(255, 255, 255, 0.5);
+                margin-bottom: 30px;
+            }
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-decoration: none;
+                        color: rgba(255, 255, 255, 0.5);
+                        transition: 0.3s;
+                        &:hover {
+                            color: #dda046;
+                        }
+                    }
+                }
+            }
+            .clickes {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 28px;
+                color: rgba(255, 255, 255, 0.5);
+                display: block;
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
+            .address,
+            .mail,
+            .tel {
+                display: flex;
+                div {
+                    &:last-child {
+                        font-size: 18px;
+                        line-height: 31px;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            }
+            .address {
+                .map {
+                    background: url("../../img/map.svg");
+                }
+            }
+            .mail {
+                .mailImg {
+                    background: url("../../img/message.svg");
+                }
+            }
+            .tel {
+                .telImg {
+                    background: url("../../img/1.2.svg");
+                }
+            }
+            .address .map,
+            .mail .mailImg,
+            .tel .telImg {
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-size: 120px 120px;
+                background-position: center center;
+                display: inline-block;
+                margin-right: 15px;
+                border-radius: 50%;
+            }
+            .social {
+                display: flex;
+                margin-top: 24px;
+                .facebook {
+                    background: url("../../img/facebook.svg");
+                }
+                .insta {
+                    background: url("../../img/instagramm.svg");
+                }
+                .youtube {
+                    background: url("../../img/Group (1).svg");
+                }
+                .facebook,
+                .insta,
+                .youtube {
+                    width: 40px;
+                    height: 40px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center center;
+                    border-radius: 50%;
+                    background-color: white;
+                    margin-right: 15px;
+                }
+                .text {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        .log1 {
+            display: block;
+        }
+        .log2 {
+            display: none;
+            margin-top: 20px;
+        }
+        .boxes {
+            .box {
+                .social {
+                    flex-wrap: wrap;
+
+                    // display: grid;
+                    // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                }
+                .social > * {
+                    // flex: 0 0 33.3333%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 660px) {
+    footer {
+        .boxes {
+            flex-direction: column;
+            // align-items: center;
+            .box {
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
